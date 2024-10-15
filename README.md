@@ -35,8 +35,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Feel free to reach out for collaborations, questions, or just to connect!
 
-- **Email**: your.email@example.com
-- **LinkedIn**: [your-linkedin](https://www.linkedin.com/in/your-linkedin/)
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: raafyshiham@gmail.com
+- **LinkedIn**: [raafyshiham](https://www.linkedin.com/in/raafyshiham/)
+- **GitHub**: [raafy](https://github.com/raafy)
 
 Thank you for visiting my portfolio!
