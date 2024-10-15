@@ -1,0 +1,29 @@
+{
+  "Metadata": {
+    "title": "raafy.dev",
+    "description": "Web Portfolio by Raafy Shiham"
+  },
+  "Header": {
+    "home": "laman utama",
+    "about": "tentang",
+    "projects": "projek",
+    "contact": "hubungi"
+  },
+  "Footer": {
+    "copyright": "Raafy Shiham. Semua hak terpelihara."
+  },
+  "HomePage": {
+    "title": "raafy.dev - Laman Utama",
+    "greeting": "Hai!👋🏽 Saya Raafy,",
+    "welcome": "selamat datang ke ruang digital saya."
+  },
+  "AboutPage": {
+    "title": "raafy.dev - Tentang Saya"
+  },
+  "ProjectsPage": {
+    "title": "raafy.dev - Projek"
+  },
+  "ContactPage": {
+    "title": "raafy.dev - Hubungi"
+  }
+}

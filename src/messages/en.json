@@ -1,0 +1,29 @@
+{
+  "Metadata": {
+    "title": "raafy.dev",
+    "description": "Web Portfolio by Raafy Shiham"
+  },
+  "Header": {
+    "home": "home",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "Footer": {
+    "copyright": "Raafy Shiham. All rights reserved."
+  },
+  "HomePage": {
+    "title": "raafy.dev - Home",
+    "greeting": "Hi!👋🏽 I'm Raafy,",
+    "welcome": "and welcome to my digital space."
+  },
+  "AboutPage": {
+    "title": "raafy.dev - About"
+  },
+  "ProjectsPage": {
+    "title": "raafy.dev - Projects"
+  },
+  "ContactPage": {
+    "title": "raafy.dev - Contact"
+  }
+}
