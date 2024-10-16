@@ -8,7 +8,7 @@ export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="flex select-none flex-col items-center gap-y-2">
+    <footer className="mt-8 flex select-none flex-col items-center gap-y-2">
       <LocaleSwitcher />
       <p className="text-center font-jetbrains text-xs opacity-50">
         &copy; {currentYear} {t("copyright")}

@@ -1,11 +1,21 @@
 import Greeting from "@/components/greeting";
 import ProfilePicture from "@/components/profile-picture";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
-interface HomePageProps {
+export async function generateMetadata({
+  params: { locale },
+}: {
   params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+
+  return {
+    title: t("title"),
+  };
 }
 
-export default function HomePage({ params: { locale } }: HomePageProps) {
+export default function HomePage() {
   return (
     <div className="flex flex-grow flex-col items-center justify-center gap-8 md:flex-row">
       <ProfilePicture />

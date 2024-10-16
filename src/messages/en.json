@@ -18,7 +18,10 @@
     "welcome": "and welcome to my digital space."
   },
   "AboutPage": {
-    "title": "raafy.dev - About"
+    "title": "raafy.dev - About",
+    "heading": "About Me",
+    "content1": "I am a dedicated Web/Mobile Developer with a strong background in Computer Science and over 4 years of experience in creating responsive web and mobile applications. Proficient in a variety of modern web technologies and frameworks, I excel in developing high-quality projects that are both scalable and efficient.",
+    "content2": "My expertise includes building user-friendly interfaces and implementing robust backend solutions. With a proactive attitude and a commitment to continuous learning, I am always eager to expand my technical skills and stay updated with industry trends."
   },
   "ProjectsPage": {
     "title": "raafy.dev - Projects"

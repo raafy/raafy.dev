@@ -49,12 +49,12 @@ export default function Header() {
         </div>
       </header>
       <motion.div
-        className={clsx("relative md:hidden")}
+        className={clsx("relative z-50 md:hidden")}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={menuOpen ? "open" : "closed"}
         variants={menu}
       >
-        <nav className="absolute mt-4 flex w-full flex-col items-center gap-y-2 rounded-xl bg-[#ffffff] p-6 font-jetbrains text-[#000000] drop-shadow dark:bg-[#ffffff] dark:text-[#000000]">
+        <nav className="absolute mt-4 flex w-full flex-col items-center gap-y-2 rounded-xl bg-[#ffffff] p-6 font-jetbrains font-bold text-[#000000] drop-shadow dark:bg-[#ffffff] dark:text-[#000000]">
           <Link
             href={"/about"}
             className="hover:opacity-80"

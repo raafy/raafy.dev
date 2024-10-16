@@ -18,7 +18,10 @@
     "welcome": "selamat datang ke ruang digital saya."
   },
   "AboutPage": {
-    "title": "raafy.dev - Tentang Saya"
+    "title": "raafy.dev - Tentang Saya",
+    "heading": "Tentang Saya",
+    "content1": "Saya seorang Pembangun Web/Mobile (Web/Mobile Developer) yang mahir dengan pengetahuan laman web dan latar belakang yang luas dalam Sains Komputer. Kini, saya mempunyai pengalaman melebihi tiga tahun dalam mencipta web responsif (responsive web) dan aplikasi mudah alih (mobile applications). Kemahiran saya dalam pelbagai teknologi dan rangka kerja laman sesawang moden,  selain fasih dan cekap dalam pembangunan projek berkualiti tinggi yang berskala.",
+    "content2": "Kepakaran saya juga termasuk membina halaman laman sesawang yang mesra pengguna (user-friendly interface) dan melaksanakan penyelesaian bahagian belakang (backend) yang mantap. Dengan sikap proaktif dan komitmen terhadap pembelajaran berterusan, saya sentiasa sedia untuk mengembangkan kemahiran teknikal saya dan peka dengan trend industri yang terkini."
   },
   "ProjectsPage": {
     "title": "raafy.dev - Projek"
