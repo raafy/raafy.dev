@@ -17,7 +17,7 @@ export async function generateMetadata({
 
 export default function HomePage() {
   return (
-    <div className="flex flex-grow flex-col items-center justify-center gap-8 md:flex-row">
+    <div className="flex w-full flex-grow select-none flex-col items-center justify-center gap-8 md:flex-row">
       <ProfilePicture />
       <Greeting />
     </div>

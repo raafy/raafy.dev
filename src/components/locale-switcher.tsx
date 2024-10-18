@@ -16,7 +16,9 @@ export default function LocaleSwitcher() {
     <div className="flex gap-x-2 font-jetbrains text-sm font-bold">
       <button
         disabled={currentLocale === "en" ? true : false}
-        className={clsx(currentLocale === "en" && "opacity-50")}
+        className={clsx(
+          currentLocale === "en" ? "opacity-50" : "hover:opacity-80",
+        )}
         onClick={() =>
           startTransition(() => {
             router.replace(
@@ -34,7 +36,9 @@ export default function LocaleSwitcher() {
       <p className="opacity-50">|</p>
       <button
         disabled={currentLocale === "ms" ? true : false}
-        className={clsx(currentLocale === "ms" && "opacity-50")}
+        className={clsx(
+          currentLocale === "ms" ? "opacity-50" : "hover:opacity-80",
+        )}
         onClick={() =>
           startTransition(() => {
             router.replace(

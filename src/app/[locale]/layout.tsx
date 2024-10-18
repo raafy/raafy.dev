@@ -57,9 +57,9 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class">
-            <div className="flex w-full max-w-screen-lg flex-grow flex-col">
+            <div className="flex w-full max-w-screen-lg flex-grow flex-col items-center">
               <Header />
-              <main className="flex flex-grow flex-col px-4 py-8 font-jetbrains">
+              <main className="flex max-w-screen-md flex-grow flex-col px-4 py-8 font-jetbrains">
                 {children}
               </main>
               <Footer locale={locale} />

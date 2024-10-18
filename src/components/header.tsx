@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex select-none items-center justify-between">
+      <header className="flex w-full select-none items-center justify-between">
         <Link
           href={"/"}
           className="hover:opacity-80"
@@ -49,7 +49,7 @@ export default function Header() {
         </div>
       </header>
       <motion.div
-        className={clsx("relative z-50 md:hidden")}
+        className={clsx("relative z-50 w-full md:hidden")}
         initial={{ opacity: 0, scale: 0.5 }}
         animate={menuOpen ? "open" : "closed"}
         variants={menu}
