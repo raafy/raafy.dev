@@ -24,9 +24,78 @@
     "content2": "My expertise includes building user-friendly interfaces and implementing robust backend solutions. With a proactive attitude and a commitment to continuous learning, I am always eager to expand my technical skills and stay updated with industry trends."
   },
   "ProjectsPage": {
-    "title": "raafy.dev - Projects"
+    "title": "raafy.dev - Projects",
+    "heading": "Projects",
+    "projects": [
+      {
+        "name": "PaMaMe",
+        "technologies": [
+          "TypeScript",
+          "NextJS",
+          "TailwindCSS",
+          "MaterialUI",
+          "PostgreSQL"
+        ],
+        "platforms": ["Web"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "Web",
+            "url": "https://pamame.com"
+          }
+        ]
+      },
+      {
+        "name": "Mastanah App",
+        "technologies": [
+          "JavaScript",
+          "React Native",
+          "NodeJS",
+          "ExpressJS",
+          "PHP",
+          "Laravel"
+        ],
+        "platforms": ["iOS", "Android"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "iOS",
+            "url": "https://apps.apple.com/my/app/mastanah-app/id6449282702"
+          },
+          {
+            "platform": "Android",
+            "url": "https://play.google.com/store/apps/details?id=com.mastanah.app&hl=en"
+          }
+        ]
+      },
+      {
+        "name": "The Lighthouse Therapy",
+        "technologies": ["PHP", "WordPress", "JavaScript"],
+        "platforms": ["Web"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "Web",
+            "url": "https://thelighthousetherapy.com/"
+          }
+        ]
+      }
+    ]
   },
   "ContactPage": {
-    "title": "raafy.dev - Contact"
+    "title": "raafy.dev - Contact",
+    "heading": "Contact Me",
+    "content": "I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out.",
+    "form": {
+      "name": "Name",
+      "nameEmpty": "",
+      "email": "Email",
+      "emailEmpty": "",
+      "emailInvalid": "",
+      "message": "Message",
+      "messageEmpty": "",
+      "messagePlaceholder": "Enter Message Here",
+      "submit": "Submit"
+    }
   }
 }

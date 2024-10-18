@@ -24,9 +24,78 @@
     "content2": "Kepakaran saya juga termasuk membina halaman laman sesawang yang mesra pengguna (user-friendly interface) dan melaksanakan penyelesaian bahagian belakang (backend) yang mantap. Dengan sikap proaktif dan komitmen terhadap pembelajaran berterusan, saya sentiasa sedia untuk mengembangkan kemahiran teknikal saya dan peka dengan trend industri yang terkini."
   },
   "ProjectsPage": {
-    "title": "raafy.dev - Projek"
+    "title": "raafy.dev - Projek",
+    "heading": "Projek",
+    "projects": [
+      {
+        "name": "PaMaMe",
+        "technologies": [
+          "TypeScript",
+          "NextJS",
+          "TailwindCSS",
+          "MaterialUI",
+          "PostgreSQL"
+        ],
+        "platforms": ["Web"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "Web",
+            "url": "https://pamame.com"
+          }
+        ]
+      },
+      {
+        "name": "Mastanah App",
+        "technologies": [
+          "JavaScript",
+          "React Native",
+          "NodeJS",
+          "ExpressJS",
+          "PHP",
+          "Laravel"
+        ],
+        "platforms": ["iOS", "Android"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "iOS",
+            "url": "https://apps.apple.com/my/app/mastanah-app/id6449282702"
+          },
+          {
+            "platform": "Android",
+            "url": "https://play.google.com/store/apps/details?id=com.mastanah.app&hl=en"
+          }
+        ]
+      },
+      {
+        "name": "The Lighthouse Therapy",
+        "technologies": ["PHP", "WordPress", "JavaScript"],
+        "platforms": ["Web"],
+        "description": "",
+        "urls": [
+          {
+            "platform": "Web",
+            "url": "https://thelighthousetherapy.com/"
+          }
+        ]
+      }
+    ]
   },
   "ContactPage": {
-    "title": "raafy.dev - Hubungi"
+    "title": "raafy.dev - Hubungi",
+    "heading": "Hubungi Saya",
+    "content": "Saya ingin mendengar daripada anda! Sama ada anda mempunyai soalan, ingin membincangkan projek atau hanya ingin menyambung, sila hubungi.",
+    "form": {
+      "name": "Nama",
+      "nameEmpty": "",
+      "email": "Emel",
+      "emailEmpty": "",
+      "emailInvalid": "",
+      "message": "Mesej",
+      "messageEmpty": "",
+      "messagePlaceholder": "Masukkan Mesej Di Sini",
+      "submit": "Menyerahkan"
+    }
   }
 }
