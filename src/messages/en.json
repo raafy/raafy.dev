@@ -95,7 +95,8 @@
       "message": "Message",
       "messageEmpty": "",
       "messagePlaceholder": "Enter Message Here",
-      "submit": "Submit"
+      "submit": "Submit",
+      "successMessage": "Message sent successfully!"
     }
   }
 }

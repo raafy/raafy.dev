@@ -95,7 +95,8 @@
       "message": "Mesej",
       "messageEmpty": "",
       "messagePlaceholder": "Masukkan Mesej Di Sini",
-      "submit": "Menyerahkan"
+      "submit": "Menyerahkan",
+      "successMessage": "Mesej anda telah berjaya dihantar. Terima kasih!"
     }
   }
 }

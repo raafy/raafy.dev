@@ -11,7 +11,43 @@ export default function ContactMe() {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setIsLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<boolean>(false);
   const t = useTranslations("ContactPage");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSuccess(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError("An unknown error occurred");
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="flex w-full flex-grow flex-col items-center justify-center gap-y-6">
@@ -35,6 +71,7 @@ export default function ContactMe() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 2 }}
         className="mt-6 flex w-full max-w-[500px] flex-col gap-y-4 font-jetbrains"
+        onSubmit={handleSubmit}
       >
         <label htmlFor="name" className="font-bold">
           {t("form.name")}
@@ -44,6 +81,7 @@ export default function ContactMe() {
           type="text"
           placeholder="John Doe"
           className="w-full max-w-[500px] border bg-[#f7f7f7] p-2 text-[#000000]"
+          value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <label htmlFor="email" className="font-bold">
@@ -54,6 +92,7 @@ export default function ContactMe() {
           type="email"
           placeholder="example@email.com"
           className="w-full max-w-[500px] border bg-[#f7f7f7] p-2 text-[#000000]"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
@@ -64,10 +103,15 @@ export default function ContactMe() {
           name="message"
           rows={5}
           className="w-full resize-none border bg-[#f7f7f7] p-2 text-[#000000]"
+          value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
           placeholder={t("form.messagePlaceholder")}
         ></textarea>
+        {error && <p className="text-red-500">{error}</p>}
+        {success && (
+          <p className="text-green-500">{t("form.successMessage")}</p>
+        )}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,15 +119,7 @@ export default function ContactMe() {
           className="flex w-full justify-center"
         >
           <button
-            onClick={async () => {
-              try {
-                setIsLoading(true);
-                console.log({ name, email, message });
-                setTimeout(() => setIsLoading(false), 5000);
-              } catch (error) {
-                console.error(error);
-              }
-            }}
+            type="submit"
             className={clsx(
               "mt-6 h-10 rounded-md bg-[#000000] px-4 py-2 font-bold text-[#ffffff] hover:opacity-80 dark:bg-[#ffffff] dark:text-[#000000]",
             )}
