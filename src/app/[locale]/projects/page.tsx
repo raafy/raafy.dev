@@ -1,27 +1,15 @@
-import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import Logo from "@/components/3d-logo";
 
-export default function ProjectsPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations("ProjectsPage");
-
-  const data = t.raw("projects") as {
-    name: string;
-    technologies: string[];
-    platforms: string[];
-    description: string;
-    urls: { platform: string; url: string }[];
-  }[];
-
-  console.log();
-
+export default function ProjectsPage() {
   return (
-    <div>
-      <p>{t("heading")}</p>
+    <div className="flex flex-grow flex-col items-center justify-center">
+      <div className="flex h-full w-full flex-col gap-y-6">
+        <Logo />
+        <div className="flex flex-col items-center">
+          <h2>Under Construction!</h2>
+          <p>Coming Soon..</p>
+        </div>
+      </div>
     </div>
   );
 }

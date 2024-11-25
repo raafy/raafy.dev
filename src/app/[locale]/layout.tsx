@@ -9,21 +9,47 @@ import {
   unstable_setRequestLocale,
 } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
-import { Fira_Code, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
 }
 
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+const firaCode = localFont({
+  src: "../../assets/fonts/FiraCode-VF.woff2",
+  variable: "--font-fira-code",
 });
 
-const firaCode = Fira_Code({
-  subsets: ["latin"],
-  variable: "--font-fira-code",
+const jetbrainsMono = localFont({
+  src: [
+    {
+      path: "../../assets/fonts/JetBrainsMono-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/JetBrainsMono-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/JetBrainsMono-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/JetBrainsMono-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/JetBrainsMono-ExtraBold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-jetbrains-mono",
 });
 
 export async function generateMetadata({

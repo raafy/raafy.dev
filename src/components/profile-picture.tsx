@@ -12,6 +12,7 @@ export default function ProfilePicture() {
       className="rounded-full shadow-inner"
     >
       <Image
+        priority
         src="/images/profile.webp"
         alt="Profile Picture"
         width={777}
