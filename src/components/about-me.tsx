@@ -41,6 +41,7 @@ export default function AboutMe() {
         <a
           href="/docs/CV.pdf"
           target="_blank"
+          aria-label="Curriculum Vitae"
           className="rounded-md bg-[#000000] px-4 py-2 font-bold text-[#ffffff] hover:opacity-80 dark:bg-[#ffffff] dark:text-[#000000]"
         >
           Curriculum Vitae

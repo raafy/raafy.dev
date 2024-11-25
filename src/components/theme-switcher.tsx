@@ -20,6 +20,7 @@ export default function ThemeSwitcher() {
   return (
     <div className="flex items-center rounded-full bg-[#f7f7f7] p-1 dark:bg-[#333333]">
       <button
+        aria-label="Toggle Light Mode"
         className={clsx(
           "rounded-full p-1.5",
           theme === "light" && "bg-[#ffffff] dark:bg-[#000000]",
@@ -29,6 +30,7 @@ export default function ThemeSwitcher() {
         <SunIcon size={16} />
       </button>
       <button
+        aria-label="Toggle Dark Mode"
         className={clsx(
           "rounded-full p-1.5",
           theme === "dark" && "bg-[#ffffff] dark:bg-[#000000]",
@@ -38,6 +40,7 @@ export default function ThemeSwitcher() {
         <MoonIcon size={16} />
       </button>
       <button
+        aria-label="Toggle System Mode"
         className={clsx(
           "rounded-full p-1.5",
           theme === "system" && "bg-[#ffffff] dark:bg-[#000000]",

@@ -41,6 +41,7 @@ export default function Header() {
             </Link>
           </nav>
           <button
+            aria-label="Toggle Menu"
             onClick={() => setMenuOpen(!menuOpen)}
             className="flex rounded-full p-1 md:hidden"
           >

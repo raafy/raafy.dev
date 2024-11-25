@@ -119,9 +119,10 @@ export default function ContactMe() {
           className="flex w-full justify-center"
         >
           <button
+            aria-label="Submit"
             type="submit"
             className={clsx(
-              "mt-6 h-10 rounded-md bg-[#000000] px-4 py-2 font-bold text-[#ffffff] hover:opacity-80 dark:bg-[#ffffff] dark:text-[#000000]",
+              "mt-6 h-10 rounded-md bg-black px-4 py-2 font-bold text-white hover:opacity-80 dark:bg-white dark:text-black",
             )}
           >
             {loading ? (
