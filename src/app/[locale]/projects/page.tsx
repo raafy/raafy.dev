@@ -1,15 +1,23 @@
-import Logo from "@/components/3d-logo";
+import UnderConstruction from "@/components/under-construction";
+import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "ProjectsPage" });
+
+  return {
+    title: t("title"),
+  };
+}
 
 export default function ProjectsPage() {
   return (
     <div className="flex flex-grow flex-col items-center justify-center">
-      <div className="flex h-full w-full flex-col gap-y-6">
-        <Logo />
-        <div className="flex flex-col items-center">
-          <h2>Under Construction!</h2>
-          <p>Coming Soon..</p>
-        </div>
-      </div>
+      <UnderConstruction />
     </div>
   );
 }

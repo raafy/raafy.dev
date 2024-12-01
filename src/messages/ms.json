@@ -12,6 +12,10 @@
   "Footer": {
     "copyright": "Raafy Shiham. Semua hak terpelihara."
   },
+  "UnderConstruction": {
+    "title": "raafy.dev - Dalam Pembinaan",
+    "message": "Laman ini sedang dalam pembinaan. Sila semak kembali kemudian."
+  },
   "HomePage": {
     "title": "raafy.dev - Laman Utama",
     "greeting": "Hai!👋🏽 Saya Raafy,",
@@ -25,62 +29,7 @@
   },
   "ProjectsPage": {
     "title": "raafy.dev - Projek",
-    "heading": "Projek",
-    "projects": [
-      {
-        "name": "PaMaMe",
-        "technologies": [
-          "TypeScript",
-          "NextJS",
-          "TailwindCSS",
-          "MaterialUI",
-          "PostgreSQL"
-        ],
-        "platforms": ["Web"],
-        "description": "",
-        "urls": [
-          {
-            "platform": "Web",
-            "url": "https://pamame.com"
-          }
-        ]
-      },
-      {
-        "name": "Mastanah App",
-        "technologies": [
-          "JavaScript",
-          "React Native",
-          "NodeJS",
-          "ExpressJS",
-          "PHP",
-          "Laravel"
-        ],
-        "platforms": ["iOS", "Android"],
-        "description": "",
-        "urls": [
-          {
-            "platform": "iOS",
-            "url": "https://apps.apple.com/my/app/mastanah-app/id6449282702"
-          },
-          {
-            "platform": "Android",
-            "url": "https://play.google.com/store/apps/details?id=com.mastanah.app&hl=en"
-          }
-        ]
-      },
-      {
-        "name": "The Lighthouse Therapy",
-        "technologies": ["PHP", "WordPress", "JavaScript"],
-        "platforms": ["Web"],
-        "description": "",
-        "urls": [
-          {
-            "platform": "Web",
-            "url": "https://thelighthousetherapy.com/"
-          }
-        ]
-      }
-    ]
+    "heading": "Projek"
   },
   "ContactPage": {
     "title": "raafy.dev - Hubungi",
